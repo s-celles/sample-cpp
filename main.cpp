@@ -4,10 +4,17 @@
  *-------------------------------------------------------------------------------------------------------------*/
 
 #include <iostream>
+#include "hello.h"
+
 using namespace std;
 
 int main() 
-{
-    cout << "Hello, Remote World!" << "\n";
+{   
+    cout << "Version " << HelloWorld_VERSION_MAJOR 
+                        << "." << HelloWorld_VERSION_MINOR
+                        << "." << HelloWorld_VERSION_PATCH 
+                        << std::endl;
+    cout << "Hello, Remote World!" << std::endl;
+    
     return 0;
 }
